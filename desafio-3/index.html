@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Job Rotation 3</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            margin-left: 2em;
+        }
+        #tabela-completa {
+            margin-bottom: 1em;
+        }  
+        table{
+            width: 100%;
+        }
+
+        .dia{
+            background-color: #30b11f;
+            color: #fff;
+            font-size: 18px;
+        }
+        .valor{
+            background-color:#eb7067;
+            color: #000;
+            font-weight: 400;
+        }
+        table, th, td {
+            border:1px solid black;
+          /* padding: 3px 10px; */
+        }
+        td{
+            text-align: center;
+            padding: 2px 2em;
+        }
+        </style>
+</head>
+<body>
+    <h1>Fatura Diária</h1>
+
+    <div>
+        <table id="tabela-completa">
+            <thead><h2>Faturamento Diário</h2></thead>
+        </table>
+    </div>
+        <div>
+        <table>
+            <tr>
+                <th></th>
+                <th>Dia</th>
+                <th>Valor</th>
+            </tr>
+            <tr id="tr-menor-valor">
+                <th>Menor valor</th>
+
+            </tr>
+            <tr id="tr-maior-valor">
+                <th>Maior Valor</th>
+            </tr>
+        </table>
+
+        <table id="tabela-superior">
+            <thead><h2>Valores Superiores à média</h2></thead>
+            <tr>
+                <th>Dia</th>
+                <th>Valor</th>
+            </tr>
+        </table>
+    </div>
+
+    <!-- <script type="module" src="./job-rotation-3.js"></script> -->
+    <script type="module" src="./principal.js"></script>
+</body>
+</html>
